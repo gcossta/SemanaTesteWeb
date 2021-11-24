@@ -1,0 +1,27 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.support.FindBy;
+
+public class Lista extends PageObject {
+	
+	//@FindBy(xpath = "//h3[contains(text(),'Coleira Petz Azul para Cães')]")
+	//private WebElement produtoDesejado;
+
+	public Lista(WebDriver driver) {
+		super(driver);
+	}
+	
+	public void clicarNoProduto(String produto) {
+		//produtoDesejado.click();
+		WebElement produtoDesejado = driver.findElement(By.xpath("//h3[contains(text(), '" + produto + "')]"));
+		produtoDesejado.click();
+	}
+	
+	public String lerCabecalhoResultado() {
+		WebElement cabecalhoResultado = driver.findElement(By.cssSelector("h2Categoria.nomeCategoria"));
+		return cabecalhoResultado.getText();
+	}
+}

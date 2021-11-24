@@ -1,0 +1,23 @@
+// 1 - Nome do Pacote
+package petz;
+
+// 2 - Bibliotecas Importadas
+import org.junit.Before;
+import org.openqa.selenium.WebDriver;
+
+
+// 3 - Classe
+public class Simples {
+	// 3.1 - Atributos (características)
+	String url; 		//endereço do site alvo
+	WebDriver driver; 	//objeto do Selenium WebDriver
+	
+	// 3.2 - Métodos ou Funções
+	@Before
+	public void iniciar() {
+		url = "https://www.petz.com.br"; //endereço da Petz
+		
+		System.setProperty("webdriver.chrome.driver", url)
+	}
+
+}

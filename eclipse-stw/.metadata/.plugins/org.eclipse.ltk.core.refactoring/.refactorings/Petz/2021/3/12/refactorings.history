@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Petz&apos; to &apos;petz&apos;&#x0D;&#x0A;- Original project: &apos;Petz&apos;&#x0D;&#x0A;- Original element: &apos;Petz/src/test/java/Petz&apos;&#x0D;&#x0A;- Renamed element: &apos;Petz/src/test/java/petz&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Petz&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/test\/java=/gradle_scope=/test=/=/gradle_used_by_scope=/test=/=/test=/true=/&lt;Petz" name="petz" qualified="false" references="true" stamp="1615916042977" textual="false" version="1.0"/>
+</session>
